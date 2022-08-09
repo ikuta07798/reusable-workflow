@@ -1,7 +1,9 @@
-name: Caller Job
+name: Callee Job
 on:
-  workflow_dispatch:
+  workflow_call:
 
 jobs:
-  Reuse:
-    uses: ikuta07798/reusable-workflow/.github/workflows/callee.yml
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo called!
