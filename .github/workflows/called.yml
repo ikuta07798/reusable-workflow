@@ -6,11 +6,14 @@ on:
         required: true
         type: string
     secrets:
-      token:
+      registry_username:
+        required: true
+      registry_password:
         required: true
 
 jobs:
   Build:
     runs-on: ubuntu-latest
+    
     steps:
       - run: echo called!
