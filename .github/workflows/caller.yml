@@ -1,0 +1,7 @@
+name: Caller Job
+on:
+  workflow_dispatch:
+
+jobs:
+  Reuse:
+    uses: ikuta07798/reusable-workflow/.github/workflows/callee.yml
