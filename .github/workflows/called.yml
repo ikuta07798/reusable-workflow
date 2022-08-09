@@ -1,15 +1,6 @@
 name: Callee Job
 on:
-  workflow_call:
-    inputs:
-      username:
-        required: true
-        type: string
-    secrets:
-      registry_username:
-        required: true
-      registry_password:
-        required: true
+  workflow_call:   
 
 jobs:
   Build:
